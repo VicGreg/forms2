@@ -1,0 +1,244 @@
+<! DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="">
+    <style>
+        *{
+      box-sizing: border-box;
+    }
+      .textarea{
+        height:200px;
+        width: 300px;
+        color: black;
+      }
+      input[type="submit"]{
+        height:50px;
+        width: 100px;
+      }
+     .div1:hover{
+       background-color: lightgrey;
+       padding:5px;
+     }
+      /*desktop view */
+      @media only screen and (min-width: 400px) {
+    body {
+        background-color:lightblue;
+        font-size: 30px;
+    }
+    .textarea{
+        height:200px;
+        width: 100%;
+      }
+      h1{
+        font-size: 50px;
+        color: white;
+      }
+      input[type="radio"]{
+        height:30px;
+        width: 50px;
+      }
+      input[type="submit"]{
+        height:100px;
+        width: 200px;
+      }
+      
+         .footer1{
+       width: 300px;
+       margin: 10px;
+       height: 200px;
+       text-align: left;
+       font-size: 20px;
+       border-right: 1px solid white;
+     }
+      .footer{
+       padding: 10px;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       background-color: blue;
+       color: white;
+     }
+       .fill{
+      height: 1000px;
+      font-size: 50px;
+    }
+    input[type="text"]{
+      width: 400px;
+      height: 100px;
+      padding: 10px;
+      border-radius: 10px;
+      outline: none;
+      font-size: 50px;
+    }
+    input[type="number"]{
+      width: 400px;
+      height: 100px;
+      padding: 10px;
+      border-radius: 10px;
+      outline: none;
+      font-size: 50px;
+    }
+    input[type="Email"]{
+      width: 400px;
+      height: 100px;
+      padding: 10px;
+      border-radius: 10px;
+      outline: none;
+      font-size: 50px;
+    }
+    input[type="Password"]{
+      width: 400px;
+      height: 100px;
+      padding: 10px;
+      border-radius: 10px;
+      outline: none;
+      font-size: 50px;
+    }
+  
+}    /*mobile view */
+      @media only screen and (max-width: 500px) {
+          .fill{
+      height: 400px;
+    }
+    body {
+        background-color:white;
+   }
+    .container{
+        padding: 20px;
+      }
+      h1{
+        font-size: 20px;
+        color: white;
+      }
+         .footer1{
+       width: 100%;
+       margin: 5px;
+       height: 200px;
+       text-align: center;
+       
+       
+     }
+      .footer{
+       padding: 10px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       background-color: blue;
+       color: white;
+     }
+     h6{
+       font-size: 20px;
+     }
+     input[type="text"]{
+      width: 250px;
+      height: 50px;
+      padding: 10px;
+      border-radius: 10px;
+      outline: none;
+    }
+    input[type="number"]{
+      width: 250px;
+      height: 50px;
+      padding: 10px;
+      border-radius: 10px;
+      outline: none;
+    }
+    input[type="Email"]{
+      width: 250px;
+      height: 50px;
+      padding: 10px;
+      border-radius: 10px;
+      outline: none;
+    }
+    input[type="Password"]{
+      width: 250px;
+      height: 50px;
+      padding: 10px;
+      border-radius: 10px;
+      outline: none;
+    }
+  
+}
+     .header{
+       padding: 10px;
+       background-color: blue;
+     }
+    
+    
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+      <h1>School Newsletter Survey</h1></div>
+      <hr>
+       <div class="form-div">
+      <form>
+        <fieldset class="fill">
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname" value="">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value=""><br>
+    Email<br>
+    <input type="email" name="email" ><br>
+    Phone No<br>
+    <input type="number" name="number" value=""><br>
+    Password<br>
+    <input type="password" name="password" value="">
+  </fieldset>
+        <div class="div1">
+               <p><b>how often do you read the school Newsletter?</b></p>
+        <input type="radio" value="Most months" name="months" checked>
+        <label>Most months </label><br>
+        <input type="radio" name="months">
+        <label>Every months </label><br>
+        <input type="radio" name="months">
+        <label>Occasionally </label><br>
+        <input type="radio" name="months">
+        <label>Not at all </label><br>
+    </div>
+    <div class="div1">
+        <p><b>Do you believe that the school newsletter <br>is a valuable source of news and information?</b></p>
+        <input type="radio" name="value">
+        <label>Extremely valuable </label><br>
+        <input type="radio" name="value">
+        <label>Very valuable  </label><br>
+        <input type="radio" name="value">
+        <label>Moderately valuable </label><br>
+        <input type="radio" name="value">
+        <label>Slightly valuable </label><br>
+        <input type="radio" name="value">
+        <label>Not at all valuable  </label><br><br>
+                </div>
+        <label><b>What suggestions do you have for future newsletters? </b></label><br>
+        <textarea class="textarea">write here...
+          </textarea><br><br>
+                <input type="submit">
+      </form>
+      </div>
+      <div class="footer">
+         <div class="footer1">
+        <h6>About</h6>
+        <p>This site is made with pure HTML and CSS, CSS used in the styling.created by Victor Tom</p>
+      </div>
+       <div class="footer1">
+         <h6>Contact</h6>
+         📞 09017740072<br>
+         F Victor G Tom
+      </div>
+       <div class="footer1">
+         <h6>Recent</h6>
+         <ul>
+           <li></li>
+           <li></li>
+           <li></li>
+         </ul>
+      </div>
+      </div>
+      
+      </div>
+      
+  </body>
+</html>
